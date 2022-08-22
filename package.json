@@ -22,7 +22,8 @@
   "lint-staged": {
     "src/**/*.{js,ts,tsx,vue}": [
       "prettier --write",
-      "eslint --fix"
+      "eslint --fix",
+      "git add ."
     ]
   },
   "keywords": [],
