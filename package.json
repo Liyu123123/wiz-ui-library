@@ -13,8 +13,17 @@
     "docs:build": "vitepress build docs --config ../vite.config.ts",
     "docs:serve": "vitepress serve docs --config ../vite.config.ts",
     "lint": "eslint --fix --ext .ts --ext .tsx,.vue src",
+    "precommit": "lint-staged",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.vue\"",
-    "commit":"git add . && git-cz "
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "commit": "git add . && git-cz "
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts,tsx,vue}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   },
   "keywords": [],
   "author": "liyu",
@@ -37,6 +46,7 @@
     "vue": "^3.2.37"
   },
   "devDependencies": {
+    "@commitlint/config-conventional": "^17.0.3",
     "@iconify-json/ic": "^1.1.4",
     "@testing-library/vue": "^6.5.1",
     "@types/react": "^18.0.9",
@@ -47,6 +57,7 @@
     "@vue/eslint-config-prettier": "^7.0.0",
     "babel-eslint": "^10.1.0",
     "c8": "^7.11.3",
+    "commitlint": "^17.0.3",
     "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "^6.9.1",
     "eslint-formatter-pretty": "^4.1.0",
@@ -56,6 +67,7 @@
     "happy-dom": "^4.0.0",
     "husky": "^8.0.1",
     "jsdom": "^19.0.0",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
