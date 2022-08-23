@@ -2,7 +2,7 @@
   "name": "wiz-ui-library",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "dist/smarty-ui.umd.js",
   "module": "./dist/smarty-ui.esm.js",
   "homepage": "https://wiz-ui-library.vercel.app/",
   "scripts": {
