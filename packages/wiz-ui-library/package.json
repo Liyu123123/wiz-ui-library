@@ -4,6 +4,7 @@
   "description": "",
   "main": "src/index.js",
   "module": "./dist/smarty-ui.esm.js",
+  "homepage": "https://wiz-ui-library.vercel.app/",
   "scripts": {
     "dev": "vite",
     "test": "vitest",
