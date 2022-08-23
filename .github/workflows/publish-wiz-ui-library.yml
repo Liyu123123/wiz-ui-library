@@ -20,7 +20,7 @@ jobs:
       - name: Install modules
         run: cd packages/wiz-ui-library && pnpm install
       - name: Build
-        run:  cd packages/wiz-ui-library &&npm run build
+        run:  cd packages/wiz-ui-library && npm run build
       - name: "Publish to the npm registry"
         uses: primer/publish@3.0.0
         env:
