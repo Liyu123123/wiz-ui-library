@@ -24,9 +24,9 @@ jobs:
         with:
           version: 7.2.1
       - name: Install modules
-        run: pnpm install
+        run: cd packages/wiz-ui-library && pnpm install
       - name: Run Lint
-        run: pnpm run lint
+        run: cd packages/wiz-ui-library &&  pnpm run lint
   UnitTest:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
@@ -37,9 +37,9 @@ jobs:
         with:
           version: 7.2.1
       - name: Install modules
-        run: pnpm install
+        run:  cd packages/wiz-ui-library && pnpm install
       - name: Run Test
-        run: pnpm run test:run
+        run:  cd packages/wiz-ui-library && pnpm run test:run
   PreBuild:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
