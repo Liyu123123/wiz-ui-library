@@ -50,6 +50,6 @@ jobs:
         with:
           version: 7.2.1
       - name: Install modules
-        run: pnpm install
+        run: cd packages/wiz-ui-library && pnpm install
       - name: Run Lint
-        run: pnpm run build
+        run: cd packages/wiz-ui-library && pnpm run build
