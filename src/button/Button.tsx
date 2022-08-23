@@ -46,6 +46,7 @@ export default defineComponent({
   setup(props, { slots }) {
     console.log(`html`, document.querySelector(`#app`)?.innerHTML);
     console.log(2222)
+    console.log(3333)
     const size = {
       small: {
         x: "2",
