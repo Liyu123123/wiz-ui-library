@@ -1,12 +1,11 @@
 /// <reference types="vitest" />
 import { defineConfig, Plugin } from "vite";
 import vue from "@vitejs/plugin-vue";
-import vueJsx from '@vitejs/plugin-vue-jsx'
+import vueJsx from "@vitejs/plugin-vue-jsx";
 import { UserConfig } from "vitest";
 import UnoCss from "./config/unocss";
 // https://vitejs.dev/config/
 const rollupOptions = {
-
   external: ["vue", "vue-router"],
   output: {
     globals: {
@@ -40,13 +39,12 @@ export const config = {
     globals: true,
     // simulate DOM with happy-dom
     // (requires installing happy-dom as a peer dependency)
-    environment: 'jsdom',
+    environment: "jsdom",
     // 支持tsx组件，很关键
     transformMode: {
-      web: [/.[tj]sx$/]
-    }
-  }
-
+      web: [/.[tj]sx$/],
+    },
+  },
 };
 
 export default defineConfig(config as UserConfig);

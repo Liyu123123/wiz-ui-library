@@ -1,4 +1,5 @@
 import { defineComponent, PropType } from "vue";
+import "uno.css";
 
 export type ISize = "small" | "medium" | "large";
 export type IColor =
@@ -41,13 +42,13 @@ export const props = {
 } as const;
 
 export default defineComponent({
-  name: "MyButton",
+  name: "Button",
   props,
   setup(props, { slots }) {
     console.log(`html`, document.querySelector(`#app`)?.innerHTML);
-    console.log(2222)
-    console.log(3333)
-    console.log(4444)
+    console.log(2222);
+    console.log(3333);
+    console.log(4444);
     const size = {
       small: {
         x: "2",

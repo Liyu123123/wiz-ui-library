@@ -1,12 +1,12 @@
-import MyButton from "./Button";
+import Button from "./Button";
 import { App } from "vue";
-
+import "uno.css";
 // 导出Button组件
-export { MyButton };
+export { Button };
 
 // 导出Vue插件
 export default {
   install(app: App) {
-    app.component(MyButton.name, MyButton);
+    app.component(Button.name, Button);
   },
 };
