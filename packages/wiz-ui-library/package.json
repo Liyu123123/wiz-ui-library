@@ -1,6 +1,6 @@
 {
   "name": "wiz-ui-library",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/smarty-ui.umd.js",
   "module": "./dist/smarty-ui.esm.js",
