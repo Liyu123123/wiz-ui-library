@@ -4,6 +4,7 @@ import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 import { UserConfig } from "vitest";
 import UnoCss from "./config/unocss";
+// import dts from "vite-plugin-dts";
 // https://vitejs.dev/config/
 const rollupOptions = {
   external: ["vue", "vue-router"],
@@ -19,6 +20,7 @@ export const config = {
     // 添加JSX插件
     vueJsx() as Plugin,
     UnoCss() as Plugin[],
+    // dts(),
   ],
   build: {
     rollupOptions,

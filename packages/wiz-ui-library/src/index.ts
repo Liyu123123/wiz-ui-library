@@ -5,8 +5,8 @@ createApp({
   template: `
     
      <div>
-         <MyButton color="red" round plain icon="search" >123</MyButton>
-         <MyButton color="blue" >blue button</MyButton>
+         <Button color="red" round plain icon="search" >123</Button>
+         <Button color="blue" >blue button</Button>
      </div>
         `,
 })
