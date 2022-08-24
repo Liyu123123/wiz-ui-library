@@ -29,3 +29,4 @@ jobs:
         with:
           default_branch: "publish"
           dir: "packages/wiz-ui-library"
+          release_tag: "1.0.0"
