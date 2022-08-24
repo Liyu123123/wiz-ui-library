@@ -1,6 +1,6 @@
 {
   "name": "wiz-manage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,9 @@
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.vue\"",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-    "commit": "git add . && git-cz "
+    "commit": "git add . && git-cz ",
+    "changeset": "changeset",
+    "version-packages": "changeset version"
   },
   "lint-staged": {
     "packages/**/*.{js,ts,tsx,vue}": [
@@ -26,6 +28,7 @@
     "vite": "^3.0.5"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.24.3",
     "@commitlint/config-conventional": "^17.0.3",
     "commitizen": "^4.2.5",
     "commitlint": "^17.0.3",

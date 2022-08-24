@@ -1,6 +1,6 @@
 {
   "name": "wiz-ui-library",
-  "version": "1.0.1",
+  "version": "3.0.0",
   "description": "",
   "main": "dist/smarty-ui.umd.js",
   "module": "./dist/smarty-ui.esm.js",
@@ -47,7 +47,6 @@
     "@vue/eslint-config-prettier": "^7.0.0",
     "babel-eslint": "^10.1.0",
     "c8": "^7.11.3",
-  
     "eslint-formatter-pretty": "^4.1.0",
     "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-prettier": "^4.2.1",
