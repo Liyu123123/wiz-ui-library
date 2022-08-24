@@ -20,8 +20,7 @@ const buildAll = async () => {
       return isDir && fs.readdirSync(componentDir).includes("index.ts");
     })
     .forEach(async (name) => {
-      console.log('ttttt')
-      console.log(name + '1')
+
       const outDir = path.resolve(config.build.outDir, name);
       const custom = {
         lib: {
@@ -39,7 +38,7 @@ const buildAll = async () => {
       fs.outputFile(
         path.resolve(outDir, `package.json`),
         `{
-          "name": "smarty-ui-vite/${name}",
+          "name": "wiz-ui-library/${name}",
           "main": "index.umd.js",
           "module": "index.umd.js"
 }`,

@@ -1,4 +1,4 @@
-# 🔨 Smarty-UI是什么?
+# 🔨 Wiz-UI是什么?
 
 一个Mini版的组件库，基于Vite栈。为需要学习前端工程化的同学搭建的组件库搭建教学模型。
 
@@ -16,23 +16,22 @@
 ## Install
 
 ```bash
-npm i smarty-admin-ui
+npm i wiz-ui-library
 ```
 
 ## Quick Start
 
 ```js
     import Vue from 'vue'
-    import SmartyUI from 'element-ui'
-
+    import WizUI from 'wiz-ui-library'
     const App = {
       template: `
-                <MyButton/>
+                <Button/>
             `,
     };
 
     createApp(App)
-      .use(SmartyUI)
+      .use(WizUI)
       .mount("#app");
 ```
 
