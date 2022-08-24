@@ -50,6 +50,7 @@ export default defineComponent({
     console.log(3333);
     console.log(4444);
     console.log(5555)
+    console.log(666666)
     const size = {
       small: {
         x: "2",

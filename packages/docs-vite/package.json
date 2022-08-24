@@ -1,6 +1,6 @@
 {
   "name": "docs-vite",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "vue": "^3.2.37",
-    "wiz-ui-library": "workspace:^1.0.0"
+    "wiz-ui-library": "workspace:^2.0.0"
   }
 }
